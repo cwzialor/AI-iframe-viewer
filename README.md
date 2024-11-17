@@ -11,7 +11,8 @@ The web product I selected can bre seen here: https://www.w3schools.com/html/try
 
 Figma prototype below: 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/LG4OiGRPa7dVepRjOomGWj/AI-iframe-viewer?node-id=1-3&embed-host=share" allowfullscreen></iframe>
+![AI-iframe-viewer](https://github.com/user-attachments/assets/007692fc-9b5d-497c-a9f6-2fc0b2ee29da)(https://www.figma.com/proto/LG4OiGRPa7dVepRjOomGWj/AI-iframe-viewer?node-id=0-1&t=utdk5RwAAbr0Hf13-1)
+
 
 This is a python HTTP server programme with the following features:
 
