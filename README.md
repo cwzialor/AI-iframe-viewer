@@ -50,9 +50,9 @@ ollama run granite-code &> /dev/null &
 ## Setup the localhost 
 
 ```
-git clone ''
+git clone 'https://github.com/cwzialor/AI-iframe-viewer.git'
 
-cd ''
+cd 'AI-iframe-viewer'
 
 chmod +x server.py
 
