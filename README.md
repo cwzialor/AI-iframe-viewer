@@ -9,10 +9,7 @@ Homework (Required): replicate the interface of an existing web product (e.g. We
 ```
 
 
-This is a python HTTP server programme 
-
-
-with the following features:
+This is a python HTTP server programme with the following features:
 
 1. When the user accesses the localhost:8080 through the browser they will see the fontend with a dialogue box with a coversation box (to speak with local AI) and an iframe box (to preview the HTML).
 2. When the user enters text into the conversation inputbox the text will be sent to the local python server which runs granite-code using Ollama. The ouput is then displayed in the conversation record box and the HTML in the most recent reply is previewed in the iframe box. The default comment is as follows:
