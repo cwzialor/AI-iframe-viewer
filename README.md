@@ -9,6 +9,10 @@ Homework (Required): replicate the interface of an existing web product (e.g. We
 ```
 The web product I selected can bre seen here: https://www.w3schools.com/html/tryit.asp
 
+Figma prototype below: 
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/LG4OiGRPa7dVepRjOomGWj/AI-iframe-viewer?node-id=1-3&embed-host=share" allowfullscreen></iframe>
+
 This is a python HTTP server programme with the following features:
 
 1. When the user accesses the localhost:8080 through the browser they will see the fontend with a dialogue box with a coversation box (to speak with local AI) and an iframe box (to preview the HTML).
@@ -33,8 +37,6 @@ This is a python HTTP server programme with the following features:
 4. After the python server recives the Ollama reply it will then send the reply the fontend programme. The full text will be sent to the dialogue box. The HTML will be send to the iframe box.
 5. After the front end recives the reply it will display the full reply in the dialogue box and the HTML in the iframe box.
 6. The conversation dialogue box will display all the conversation texts in a chronological order with time records. The iframe box will display the HTML from the most recent post.
-
-
 
 ## Set up IBM granite-code using Ollama
 
