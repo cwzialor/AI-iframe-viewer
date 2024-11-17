@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI iframe HTML viewer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex h-screen">
+    <div class="w-1/2 p-4">
+        <div id="conversation" class="h-5/6 overflow-y-auto border p-2"></div>
+        <input id="userInput" type="text" class="w-full border mt-2 p-2" placeholder="Type your message here...">
+    </div>
+    <div class="w-1/2 p-4">
+        <iframe id="renderedContent" class="w-full h-full border"></iframe>
+    </div>
+
+    <script>
+        const conversation = document.getElementById('conversation');
+        const userInput = document.getElementById('userInput');
+        const renderedContent = document.getElementById('renderedContent');
+
+        renderedContent.srcdoc = `<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Welcome to Local AI iframe HTML viewer</h1>
+<p>Prompt the AI to create a webpage and and see a fully rendered preview here!</p>
+
+</body>
+</html>`;
+
+        userInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const text = userInput.value;
+                userInput.value = '';
+                console.log(`Sending input: ${text}`);  // Debugging
+                fetch('/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ text })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(`Received response: ${JSON.stringify(data)}`);  // Debugging
+                    const time = new Date().toLocaleTimeString();
+                    conversation.innerHTML += `<div><strong>${time}</strong>: ${data.full_text}</div>`;
+                    renderedContent.srcdoc = data.html;  // Ensure this matches the server response key
+                    console.log(`Setting iframe content: ${data.html}`);  // Debugging
+                })
+                .catch(error => console.error('Error:', error));  // Debugging
+            }
+        });
+    </script>
+</body>
+</html>
