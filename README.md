@@ -1,5 +1,11 @@
 # Local AI iframe HTML viewer
 
+Watch the demonstration video:
+
+
+[![Add a heading](https://github.com/user-attachments/assets/0521ecab-6d65-4a18-bd79-103ba418e043)](https://youtu.be/Hj6FVGQQUeA)
+
+
 ## Description
 
 This project was made for the course DES8105 Web Product Design (互联网产品设计) at Shanghai Jiao Tong University. The critera was as follows:
