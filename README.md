@@ -3,10 +3,10 @@
 ## Description
 
 This project was made for the course DES8105 Web Product Design (互联网产品设计) at Shanghai Jiao Tong University. The critera was as follows:
-- replicate the interface of an existing web product (e.g. WeChat),
-- modify part of the interface,
-- add AI chat function and explain the reasons for the modification;
-- submit a Figma design plan, executable code (if you feel AIGC programming is too difficult for you, just skip it)[...]
+- Replicate the interface of an existing web product (e.g. WeChat),
+- Modify part of the interface,
+- Add AI chat function and explain the reasons for the modification;
+- Submit a Figma design plan, executable code (if you feel AIGC programming is too difficult for you, just skip it)[...]
 
 The existing web product I chose is the try it function on [www.w3schools.com](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic)
 
